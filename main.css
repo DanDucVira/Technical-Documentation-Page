@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+aside {
+    position: fixed;
+    background: #eee;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 350px;
+    text-align: center;
+
+}
+
+.headline {
+    font-size: 1.5rem;
+    background: skyblue;
+    padding: 15px;
+}
+
+aside li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.8rem;
+    padding: 10px;
+    border-bottom: 1px solid black;
+
+
+}
+
+aside a {
+    text-decoration: none;
+}
