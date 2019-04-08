@@ -1,6 +1,8 @@
+/*https://colorhunt.co/palette/139087*/
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Poppins', sans-serif;
 }
 
 aside {
@@ -16,8 +18,9 @@ aside {
 
 .headline {
     font-size: 1.5rem;
-    background: skyblue;
+    background: #eac100;
     padding: 15px;
+    color: white;
 }
 
 aside li {
@@ -32,4 +35,17 @@ aside li {
 
 aside a {
     text-decoration: none;
+}
+
+#main-doc {
+    float: right;
+    width: 80%;
+}
+
+#main-doc h3 {
+    font-size: 2rem;
+}
+
+#main-doc p {
+    font-size: 1rem;
 }
