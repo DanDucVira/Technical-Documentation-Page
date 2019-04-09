@@ -5,13 +5,25 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.code-block {
+    background: #ececec;
+    height: 150px;
+    width: 800px;
+    padding: 25px;
+
+}
+
+.var-color {
+    color: #207dff;
+}
+
 aside {
     position: fixed;
     background: #eee;
     top: 0;
     left: 0;
     height: 100%;
-    width: 350px;
+
     text-align: center;
 
 }
@@ -37,6 +49,12 @@ aside a {
     text-decoration: none;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+}
+
 #main-doc {
     float: right;
     width: 80%;
@@ -44,6 +62,12 @@ aside a {
 
 #main-doc h3 {
     font-size: 2rem;
+    padding: 25px 0px;
+}
+
+#main-doc h4 {
+    padding-top: 25px;
+    padding-bottom: 15px;
 }
 
 #main-doc p {

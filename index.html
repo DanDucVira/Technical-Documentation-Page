@@ -12,7 +12,7 @@
 
 <body>
     <aside>
-        <nav>
+        <nav id="nav-bar">
             <h1 class="headline">JS Documentation</h1>
             <ul>
                 <li>
@@ -52,28 +52,111 @@
         </nav>
     </aside>
     <main id="main-doc">
-        <section class="main-section">
-            <h3>Introduction</h3>
-            <p>JavaScript was first created in 1995 by Brendan Eich over 10 days while at Netscape. Unusually JavaScript
-                has no concept of input/output; it is designed to run as a scripting language in a host environment,
-                typically the web browser but also elsewhere such as on the server with NodeJS.<br>
+        <div class="main-container">
+            <section class="main-section">
+                <h3>Introduction</h3>
+                <p>JavaScript was first created in 1995 by Brendan Eich over 10 days while at Netscape. Unusually
+                    JavaScript
+                    has no concept of input/output; it is designed to run as a scripting language in a host environment,
+                    typically the web browser but also elsewhere such as on the server with NodeJS.<br>
 
-                Its syntax is similar to Java and C languages. While JavaScript supports object-oriented programming it
-                is prototype-based and functions are first class, meaning they can be passed as arguments to other
-                functions.<br>
+                    Its syntax is similar to Java and C languages. While JavaScript supports object-oriented programming
+                    it
+                    is prototype-based and functions are first class, meaning they can be passed as arguments to other
+                    functions.<br>
 
-                JavaScript is often called an interpreted language but it is best thought of conceptually as compiled.
-                The JavaScript engine reads through the entire code first checking for errors and variable/function
-                declarations. Then it will go through and execute the code, top-to-bottom, line by line, recursively
-                descending into code blocks as needed. This JIT (just-in-time compilation) approach yields many
-                performance wins and is also adopted by Python and Ruby interpreters.</p>
-        </section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
+                    JavaScript is often called an interpreted language but it is best thought of conceptually as
+                    compiled.
+                    The JavaScript engine reads through the entire code first checking for errors and variable/function
+                    declarations. Then it will go through and execute the code, top-to-bottom, line by line, recursively
+                    descending into code blocks as needed. This JIT (just-in-time compilation) approach yields many
+                    performance wins and is also adopted by Python and Ruby interpreters.</p>
+            </section>
+            <section class="main-section">
+                <h3>Variables and Data</h3>
+                <p>Think, if you will, of a variable as a shelf with a name so it’s easy to get back to. You’ve named a
+                    shelf surname.</p>
+
+                <p>You can name a variable anything you like, but it’s best to name it in a way that tells what you’ve
+                    stored there. For example, surname is better than mything or s.</p>
+
+                <p>When you type a variable name into the console you are asking the browser, which looks after the
+                    shelves, to go find the shelf and give what’s on it to you. This is also known as the variable’s
+                    value. The value can be almost anything - in surname, you’ve stored some letters, known as a string.
+                    You can also store numbers and a myriad other kinds of data.</p>
+
+                <p>So, a variable has a name and a value.</p>
+
+                <p> They are the way we store data, and you’ll be using them a lot.</p>
+
+                <p> There are two parts to creating a variable; declaration and initialization. Once it’s created, you
+                    can assign (or set) its value.</p>
+                <h4>Declaration</h4>
+                <p>Declaration is declaring a variable to exist. To return to the shelf metaphor, it’s like picking an
+                    empty shelf in a massive warehouse and putting a name on it.</p>
+                <p>As above, to declare a variable, use the var keyword followed by the variable name, like this:</p>
+                <div class="code-block">
+                    <code><span class="var-color">var</span> surname;</code><br>
+                    <code><span class="var-color">var</span> age;</code>
+
+                </div>
+                <h4>Initialization</h4>
+                <p><strong>Initialization</strong> is giving a variable its <strong>value</strong> for the first time.
+                    The value can
+                    change later, but it
+                    is only initialized once.
+                </p>
+                <p>You initialize a variable using the equals sign (=). You can read it as “the value of the variable on
+                    the left should be the data on the right”:</p>
+                <div class="code-block">
+                    <code><span class="var-color">var</span> name = "Tom";</code>
+                </div>
+                <p>“Tom” is a <strong>string</strong> - a collection of letters. A string is surrounded by single or
+                    double quote marks.
+
+                </p>
+                <div class="code-block">
+                    <code><span class="var-color">var</span> age = 20;</code>
+                </div>
+                <p>20 is just a number - and numbers don’t go in quotes.</p>
+                <h4>Assignment</h4>
+                <p>As mentioned, you can set a variable’s value as many times as you like. It’s called assignment and it
+                    looks very similar to initialization. You again use the equals sign, but there’s no need for the var
+                    keyword because we’ve already declared the variable.</p>
+                <p>It's like this:</p>
+                <div class="code-block">
+                    <code>name = "Andy";</code><br>
+                    <code>age = 43;</code>
+                </div>
+                <p><strong>Only </strong>do this if you’ve declared the variable using the var keyword!</p>
+
+            </section>
+            <section class="main-section">
+                <h3>Math</h3>
+                <p>Variables can be used to store strings and numbers (amongst other things), but here the focus is on
+                    numbers.</p>
+                <h4>How much fruit?</h4>
+                <p>let’s create two variables. One will be the number of apples we have, the second will be the number
+                    of pears.</p>
+                <div class="code-block">
+                    <code><span class="var-color">var</span> apples = 5;</code><br>
+                    <code><span class="var-color">var</span> pears = 10;</code>
+                </div>
+                <p>That creates two variables… but there’s only one<span class="var-color">var</span>keyword? Yup, it’s
+                    a shorthand for declaring and
+                    initializing multiple variables at the same time. By using the <span class="var-color">var</span>
+                    keyword once and separating the
+                    new variables with commas you can save yourself some work.</p>
+                <p>Now, use these two variables to figure out how many pieces of fruit there are in total.</p>
+                <div class="code-block">
+                    <code><span class="var-color">var</span> piecesOfFruit = apples + pears;</code>
+                </div>
+            </section>
+            <section class="main-section"></section>
+            <section class="main-section"></section>
+            <section class="main-section"></section>
+            <section class="main-section"></section>
+        </div>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
