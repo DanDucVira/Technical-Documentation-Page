@@ -17,25 +17,28 @@
     color: #207dff;
 }
 
-aside {
+#side-nav {
     position: fixed;
     background: #eee;
     top: 0;
     left: 0;
     height: 100%;
-
+    overflow: auto;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 250px;
 
 }
 
-.headline {
+#side-nav .headline {
     font-size: 1.5rem;
     background: #eac100;
     padding: 15px;
     color: white;
 }
 
-aside li {
+#side-nav li {
     text-decoration: none;
     list-style: none;
     font-size: 1.8rem;
@@ -45,31 +48,115 @@ aside li {
 
 }
 
-aside a {
+#side-nav a {
     text-decoration: none;
+    display: block;
+    color: black;
+
 }
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-    margin: 35px;
+@media screen and (min-width: 700px) {
+    #side-nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #side-nav a {
+        float: left;
+    }
+
+
+
+    @media screen and (min-width: 400px) {
+        #side-nav a {
+            text-align: center;
+            float: none;
+        }
+    }
+
+    #main-doc {
+        display: flex;
+        flex-direction: column;
+        margin: 35px;
+    }
+
+    #main-doc {
+        float: right;
+        width: 80%;
+    }
+
+    #main-doc h3 {
+        font-size: 2rem;
+        padding: 25px 0px;
+    }
+
+    #main-doc h4 {
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+
+    #main-doc p {
+        font-size: 1rem;
+    }
+
+    code-block {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
-#main-doc {
-    float: right;
-    width: 80%;
-}
+@media screen and (max-width: 700px) {
+    #side-nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
 
-#main-doc h3 {
-    font-size: 2rem;
-    padding: 25px 0px;
-}
+    #side-nav a {
+        float: left;
+    }
 
-#main-doc h4 {
-    padding-top: 25px;
-    padding-bottom: 15px;
-}
 
-#main-doc p {
-    font-size: 1rem;
+
+    @media screen and (max-width: 412px) {
+        #side-nav a {
+            text-align: center;
+            float: none;
+        }
+    }
+
+    #main-doc {
+        display: flex;
+        flex-direction: column;
+        margin: 35px;
+    }
+
+    #main-doc {
+        float: right;
+        width: 80%;
+    }
+
+    #main-doc h3 {
+        font-size: 2rem;
+        padding: 25px 0px;
+    }
+
+    #main-doc h4 {
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+
+    #main-doc p {
+        font-size: 1rem;
+    }
+
+    .code-block {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
 }
