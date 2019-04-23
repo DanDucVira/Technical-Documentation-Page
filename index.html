@@ -12,8 +12,8 @@
 
 <body>
     <aside id="side-nav">
-        <nav id="nav-bar">
-            <h1 class="headline">JS Documentation</h1>
+        <nav id="navbar">
+            <header>JS Documentation</header>
             <ul>
                 <li>
                     <a href="#" class="nav-link">Introduction</a>
@@ -53,8 +53,8 @@
     </aside>
     <main id="main-doc">
         <div class="main-container">
-            <section class="main-section">
-                <h3>Introduction</h3>
+            <section class="main-section" id="introduction">
+                <header>Introduction</header>
                 <p>JavaScript was first created in 1995 by Brendan Eich over 10 days while at Netscape. Unusually
                     JavaScript
                     has no concept of input/output; it is designed to run as a scripting language in a host environment,
@@ -72,8 +72,8 @@
                     descending into code blocks as needed. This JIT (just-in-time compilation) approach yields many
                     performance wins and is also adopted by Python and Ruby interpreters.</p>
             </section>
-            <section class="main-section">
-                <h3>Variables and Data</h3>
+            <section class="main-section" id="variables_and_data">
+                <header>Variables and Data</header>
                 <p>Think, if you will, of a variable as a shelf with a name so it’s easy to get back to. You’ve named a
                     shelf surname.</p>
 
@@ -131,8 +131,8 @@
                 <p><strong>Only </strong>do this if you’ve declared the variable using the var keyword!</p>
 
             </section>
-            <section class="main-section">
-                <h3>Math</h3>
+            <section class="main-section" id="math">
+                <header>Math</header>
                 <p>Variables can be used to store strings and numbers (amongst other things), but here the focus is on
                     numbers.</p>
                 <h4>How much fruit?</h4>
@@ -153,8 +153,8 @@
                     <code><span class="var-color">var</span> piecesOfFruit = apples + pears;</code>
                 </div>
             </section>
-            <section class="main-section">
-                <h3>Logic</h3>
+            <section class="main-section" id="logic">
+                <header>Logic</header>
                 <p>A really important part of programming is being able to compare values in order to make decisions in
                     code. When a comparison is made the outcome is either true or false; a special kind a of data called
                     a <strong>boolean</strong>. This is <strong>Logic</strong>.</p>
@@ -175,8 +175,8 @@
                     <p>true</p>
                 </div>
             </section>
-            <section class="main-section">
-                <h3>Conditional</h3>
+            <section class="main-section" id="conditional">
+                <header>Conditional</header>
                 <p>Logic is used to make decisions in code; choosing to run one piece of code or another depending on
                     the comparisons made. This requires use of something called a conditional.
                     There are a few different conditionals that you might want to use, but we’ll just focus the one used
@@ -204,7 +204,12 @@
                     </p>
                 </div>
             </section>
-            <section class="main-section">
+            <section class="main-section" id="looping">
+
+                <header>Looping</header>
+                <p>Loops are a way of repeating the same block of code over and over. They’re incredibly useful, and are
+                    used, for example, to carry out an action on every item in an array (we will come to arrays later)
+                    or in searching.</p>
             </section>
             <section class="main-section"></section>
         </div>
