@@ -17,6 +17,11 @@
     color: #207dff;
 }
 
+.main-container {
+    margin-left: 18%;
+    margin-top: 2%;
+}
+
 #side-nav {
     position: fixed;
     background: #eee;
@@ -55,108 +60,26 @@
 
 }
 
-@media screen and (min-width: 700px) {
+@media (max-width: 400px) {
     #side-nav {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-
-    #side-nav a {
-        float: left;
-    }
-
-
-
-    @media screen and (min-width: 400px) {
-        #side-nav a {
-            text-align: center;
-            float: none;
-        }
-    }
-
-    #main-doc {
-        display: flex;
-        flex-direction: column;
-        margin: 35px;
-    }
-
-    #main-doc {
-        float: right;
-        width: 80%;
-    }
-
-    #main-doc h3 {
-        font-size: 2rem;
-        padding: 25px 0px;
-    }
-
-    #main-doc h4 {
-        padding-top: 25px;
-        padding-bottom: 15px;
-    }
-
-    #main-doc p {
-        font-size: 1rem;
-    }
-
-    code-block {
-        display: flex;
-        flex-direction: column;
+        margin: 0 auto;
+        position: static;
         width: 100%;
     }
-}
 
-@media screen and (max-width: 700px) {
-    #side-nav {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-
-    #side-nav a {
-        float: left;
-    }
-
-
-
-    @media screen and (max-width: 412px) {
-        #side-nav a {
-            text-align: center;
-            float: none;
-        }
-    }
-
-    #main-doc {
-        display: flex;
-        flex-direction: column;
-        margin: 35px;
-    }
-
-    #main-doc {
-        float: right;
-        width: 80%;
-    }
-
-    #main-doc h3 {
-        font-size: 2rem;
-        padding: 25px 0px;
-    }
-
-    #main-doc h4 {
-        padding-top: 25px;
-        padding-bottom: 15px;
-    }
-
-    #main-doc p {
-        font-size: 1rem;
+    .main-container {
+        text-align: center;
+        padding: 55px 0px;
+        margin: 0px;
     }
 
     .code-block {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
+        background: #ececec;
+        height: 150px;
+        width: 800px;
+        text-align: left;
+        font-size: 1rem;
+
+
     }
 }
