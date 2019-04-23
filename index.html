@@ -16,44 +16,42 @@
             <header>JS Documentation</header>
             <ul>
                 <li>
-                    <a href="#" class="nav-link">Introduction</a>
+                    <a href="#Introduction" class="nav-link">Introduction</a>
+                </li>
+
+                <li>
+                    <a href="#Variables_and_Data" class="nav-link">Variables and Data</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">History of JavaScript</a>
+                    <a href="#Math" class="nav-link">Math</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">Variables and Data</a>
+                    <a href="#Logic" class="nav-link">Logic</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">Math</a>
+                    <a href="#Conditional" class="nav-link">Conditional</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">Logic</a>
+                    <a href="#Looping" class="nav-link">Looping</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">Conditional</a>
+                    <a href="#Functions" class="nav-link">Functions</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">Looping</a>
+                    <a href="#Objects" class="nav-link">Objects</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">Functions</a>
+                    <a href="#Array" class="nav-link">Arrays</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">Objects</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">Arrays</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">The DOM</a>
+                    <a href="#The_Dom" class="nav-link">The DOM</a>
                 </li>
             </ul>
         </nav>
     </aside>
     <main id="main-doc">
         <div class="main-container">
-            <section class="main-section" id="introduction">
+            <section class="main-section" id="Introduction">
                 <header>Introduction</header>
                 <p>JavaScript was first created in 1995 by Brendan Eich over 10 days while at Netscape. Unusually
                     JavaScript
@@ -72,7 +70,7 @@
                     descending into code blocks as needed. This JIT (just-in-time compilation) approach yields many
                     performance wins and is also adopted by Python and Ruby interpreters.</p>
             </section>
-            <section class="main-section" id="variables_and_data">
+            <section class="main-section" id="Variables_and_Data">
                 <header>Variables and Data</header>
                 <p>Think, if you will, of a variable as a shelf with a name so it’s easy to get back to. You’ve named a
                     shelf surname.</p>
@@ -131,7 +129,7 @@
                 <p><strong>Only </strong>do this if you’ve declared the variable using the var keyword!</p>
 
             </section>
-            <section class="main-section" id="math">
+            <section class="main-section" id="Math">
                 <header>Math</header>
                 <p>Variables can be used to store strings and numbers (amongst other things), but here the focus is on
                     numbers.</p>
@@ -153,7 +151,7 @@
                     <code><span class="var-color">var</span> piecesOfFruit = apples + pears;</code>
                 </div>
             </section>
-            <section class="main-section" id="logic">
+            <section class="main-section" id="Logic">
                 <header>Logic</header>
                 <p>A really important part of programming is being able to compare values in order to make decisions in
                     code. When a comparison is made the outcome is either true or false; a special kind a of data called
@@ -175,7 +173,7 @@
                     <p>true</p>
                 </div>
             </section>
-            <section class="main-section" id="conditional">
+            <section class="main-section" id="Conditional">
                 <header>Conditional</header>
                 <p>Logic is used to make decisions in code; choosing to run one piece of code or another depending on
                     the comparisons made. This requires use of something called a conditional.
@@ -204,14 +202,96 @@
                     </p>
                 </div>
             </section>
-            <section class="main-section" id="looping">
+            <section class="main-section" id="Looping">
 
                 <header>Looping</header>
                 <p>Loops are a way of repeating the same block of code over and over. They’re incredibly useful, and are
                     used, for example, to carry out an action on every item in an array (we will come to arrays later)
                     or in searching.</p>
+                <p>Two of the most common loops are while loops and for loops. They combine a conditional and a block,
+                    running the block over and over until the logic of the conditional is no longer true, or until you
+                    force them to stop.</p>
+                <h3>While</h3>
+                <p>A while loop repeats a block of code while a condition is true. Like an if statement, the condition
+                    is found in parentheses.</p>
+                <div class="code-block">
+                    <p>
+                        var i = 1;<br>
+                        while (i < 10) {<br> alert(i);<br> i=i + 1;<br>} // i is now 10 </p>
+                </div>
+                <p>After looping has finished the code carries on running from just after the closing brace (“}”) of the
+                    loop’s block.</p>
+                <h3>For</h3>
+                <p>A for loop is similar to an if statement, but it combines three semicolon-separated pieces
+                    information between the parentheses: initialization, condition and a final expression.</p>
+                <p>The initialization part is for creating a variable to let you track how far through the loop you are
+                    - like i in the while example; the condition is where the looping logic goes - the same as the
+                    condition in the while example; and the final expression is run at the end of every loop.</p>
+                <div class="code-block">
+                    <p>
+                        for (var i = 1; i < 10; i++) { <br>
+                            </10>alert(i);<br> } </p>
+                </div>
+                <p>This gives us alert boxes containing the numbers 1 to 10 in order.</p>
             </section>
-            <section class="main-section"></section>
+            <section class="main-section" id="Functions">
+                <header>Functions</header>
+                <p>Functions are reusable blocks of code that carry out a specific task. To execute the code in a
+                    function you call it. A function can be passed arguments to use, and a function may return a value
+
+                    to whatever called it.</p>
+                <p>You can save functions as the value of a variable, and you call a function using this variable and a
+                    pair of parentheses. This is also called invoking the function.</p>
+                <div class="code-block">
+                    <p>
+                        doSomething();<br>
+                        findAnInterestingThing();</p>
+                </div>
+                <p>To create a function, use the function keyword. You then list the arguments in parentheses, and then
+                    supply a block that contains the function’s code. Here’s a function that adds two numbers:</p>
+                <div class="code-block">
+                    <p>
+                        var add = function (a, b) {<br>
+                        return a + b; <br>
+                        };</p>
+                </div>
+
+                <p>a and b are the function’s parameters, and the value it returns is signified by the return keyword.
+                    The return keyword also stops execution of the code in the function; nothing after it will be run.
+                </p>
+                <div class="code-block">
+                    <p>
+                        var result = add(1, 2); // result is now 3
+                    </p>
+                </div>
+            </section>
+            <section class="main-section" id="Objects">
+                <header>Objects</header>
+                <p>JavaScript objects are like a real life objects; they have properties and abilities. A JavaScript
+                    object is, in that sense, a collection of named properties and methods - a function. An object can
+                    be stored in a variable, and the properties and methods accessed using the dot syntax.</p>
+                <p>A human, for example, has a name and an age, and could talk, move or learn JavaScript. Name and age
+                    are properties of the human, and are essentially pieces of data. Talking, moving and learning are
+                    more like functions - there’s some complex behavior involved. When a JavaScript object has such an
+                    ability, it is called a method.</p>
+                <p>Variables can hold objects, and creating an object is done using a special syntax signified by
+                    braces:</p>
+                <div class="code-block">
+                    <p>
+                        var jedi = {<br>
+                        name: "Yoda",<br>
+                        age: 899,<br>
+                        talk: function () { alert("another... Sky... walk..."); }<br>
+                        };
+                    </p>
+                </div>
+            </section>
+            <section class="main-section" id="Array">
+                <header>Arrays</header>
+            </section>
+            <section class="main-section" id="The_Dom">
+                <header>The Dom</header>
+            </section>
         </div>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

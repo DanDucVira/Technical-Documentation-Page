@@ -41,6 +41,7 @@
     background: #eac100;
     padding: 15px;
     color: white;
+
 }
 
 #side-nav li {
@@ -58,6 +59,11 @@
     display: block;
     color: black;
 
+}
+
+#main-doc header {
+    font-size: 2.5rem;
+    padding: 25px 0;
 }
 
 @media (max-width: 400px) {
