@@ -41,11 +41,9 @@
                     <a href="#Objects" class="nav-link">Objects</a>
                 </li>
                 <li>
-                    <a href="#Array" class="nav-link">Arrays</a>
+                    <a href="#Arrays" class="nav-link">Arrays</a>
                 </li>
-                <li>
-                    <a href="#The_Dom" class="nav-link">The DOM</a>
-                </li>
+
             </ul>
         </nav>
     </aside>
@@ -69,6 +67,28 @@
                     declarations. Then it will go through and execute the code, top-to-bottom, line by line, recursively
                     descending into code blocks as needed. This JIT (just-in-time compilation) approach yields many
                     performance wins and is also adopted by Python and Ruby interpreters.</p>
+
+                <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of
+                    language elements such as operators, control structures, and statements. Core JavaScript can be
+                    extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+                <ul>
+                    <li>Client-side JavaScript extends the core language by supplying objects to control a browser and
+                        its Document Object Model (DOM). For example, client-side extensions allow an application to
+                        place elements on an HTML form and respond to user events such as mouse clicks, form input, and
+                        page navigation.</li>
+                    <li>Server-side JavaScript extends the core language by supplying objects relevant to running
+                        JavaScript on a server. For example, server-side extensions allow an application to communicate
+                        with a database, provide continuity of information from one invocation to another of the
+                        application, or perform file manipulations on a server.</li>
+                </ul>
+                <h3>What you shoud know</h3>
+                <p>This guide assumes you have the following basic background</p>
+                <ul>
+                    <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+                    <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                    <li>Some programming experience. If you are new to programming, try one of the tutorials linked on
+                        the main page about JavaScript.</li>
+                </ul>
             </section>
             <section class="main-section" id="Variables_and_Data">
                 <header>Variables and Data</header>
@@ -286,14 +306,41 @@
                     </p>
                 </div>
             </section>
-            <section class="main-section" id="Array">
+            <section class="main-section" id="Arrays">
                 <header>Arrays</header>
+                <p>Arrays are lists of any kind of data, including other arrays. Each item in the array has an index — a
+                    number — which can be used to retrieve an element from the array.</p>
+                <p>The indices start at 0; that is, the first element in the array has the index 0, and subsequent
+                    elements have incrementally increasing indices, so the last element in the array has an index one
+                    less than the length of the array.</p>
+                <p>In JavaScript, you create an array using the array-literal syntax:</p>
+                <div class="code-block">
+                    <p>var emptyArray = [];</p>
+                    <p>var shoppingList = ['Milk', 'Bread', 'Beans'];</p>
+                </div>
+                <p>You can find the number of elements in the array using its length property:</p>
+                <div class="code-block">
+                    <p>shoppingList.length;</p>
+                    <p>= 3</p>
+                </div>
+                <p>You can use push and pop methods to add and remove elements from the end of the array:</p>
+                <div class="code-block">
+                    <p>shoppingList.push('A new car');</p>
+                    <p>// shoppingList is now ['Milk', 'Bread', 'Beans', 'A new car']</p>
+                </div>
+                <div class="code-block">
+                    <p>shoppingList.pop();</p>
+                    <p>// shoppingList is back to ['Milk', 'Bread', 'Beans']</p>
+                </div>
+                <p>Here’s an example that creates, pushes, pops and iterates over an array, passing each name to a
+                    function called helloFrom. helloFrom returns a string with a greeting: “Hello from ” and then the
+                    person’s name. After the pushing and popping, the final list of people is: “Tom”, “Yoda”, “Ron” and
+                    “Bob”.</p>
             </section>
-            <section class="main-section" id="The_Dom">
-                <header>The Dom</header>
-            </section>
+
         </div>
     </main>
+    <footer>&copy; FCCTechnical 2019</footer>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
